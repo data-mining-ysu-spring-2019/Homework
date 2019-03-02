@@ -1,0 +1,111 @@
+---
+title: "Homework_2"
+author: "Lusine Zilfimian"
+date: "March 1, 2019"
+output: html_document
+---
+<h1>Due date 09/03/2019 23:59</h1>
+
+For this Homework, you are required to submit both Markdown and HTML files with your answers and code in it. Be sure that the .Rmd file is working, so when I run it, there would be no errors and represent the same information as HTML. Write your code and interpretations under each question. The interpretations of the results need to be written below or above all the charts, summaries, or tables. Do not remove problems from your Markdown file. 
+
+Use gpafactors.csv dataset uploaded on GitHub to analyze the relationship between grade point average of students and different factors. The description of the variables is given in a separate file. Pay close attention to the names of axes, titles, and labels. <p>
+
+
+
+<b> Problem 1. 1 pt. </b> <p>
+
+Load the file.<p>
+
+Get rid of variables that are irrelevant for regression analysis using function select(). <p>
+
+Check whether the data types are correct, if not make appropriate corrections assigning labels to each level according to the data description. <p>
+
+
+```{r}
+
+```
+
+
+
+
+
+
+<b> Problem 2. 1 pt. </b> <p>
+
+Find the two most correlated numeric variables with grade point average of students using cor() and pairs() functions. Comment on it. <p>
+Find the binary variables which affect grade point average of students using boxplots. Comment on it. <p>
+
+```{r}
+
+```
+
+
+
+
+
+
+<b> Problem 3. 1 pt. </b> <p>
+
+Use the lm() function to perform a simple linear regression with GPA as the response and the most correlated numeric variable as the predictor. Use the summary() function to print the results. Comment on the output: <p>
+
+a. Explain the meanings of coefficients (do they all have a meaning)? <p>
+b. Why do we need to add b0 to the regression model? <p>
+c. Which coefficients are significant (in which level)? Why and why not? <p>
+d. Explain the meaning of R-squared in your model. <p>
+e. Plot the response and the predictor. Use the geom_abline() function to display the least squares regression line. <p>
+
+
+```{r}
+
+```
+
+
+
+
+
+<b> Problem 4. 2 pt. </b> <p>
+
+a. Discover the relationship between marital status and grade point average of the students using boxplot. <p>
+b. Run the regression model with GPA as a response and marital status as explanatory variable.<p>
+ In this regression model, the reference group for the categorical variable should be the single value. Use relevel().<p>
+c. Interpret the coefficients of a categorical variable. <p>
+d. Add to previous model one numeric variable. Do not apply summary(). Plot the response and the predictors. You must have 3 labeled regression lines.<p>
+
+
+```{r}
+```
+
+
+
+
+
+
+<b> Problem 5. 2 pt. </b> <p>
+
+a. Divide the data frame into Train and Test sets (85:15). Do not forget about set.seed() function.<p>
+b. Let the threshold for correlation coefficient is 0.7. Is there multicollinearity in the data?<p>
+c. Try different models with gpa as a dependent variable. Exclude from the models one of multicollinear variables which is less correlated with GPA. <p>
+Save only the best model (based on both R^2 and sig.t). Why do we need to look at Adjusted R^2? <p>
+d. Formulate Null and Alternative hypotheses for all model (a.k.a for F statistics).Is the H0 rejected? How do we choose the level of significance?
+
+
+```{r}
+
+```
+
+
+
+
+
+<b> Bonus. 1 pt </b> <p>
+Do we need to prefer the OLS estimation to ML evaluation in regression models if all assumptions of  Gauss-Markov theorem are satisfied for small data? Why? When we can equally use these methods?
+
+```{r}
+
+```
+
+
+
+
+
+<b>Please, make brief and meaningful conclusions.<b>
