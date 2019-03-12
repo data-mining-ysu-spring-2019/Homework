@@ -1,0 +1,84 @@
+---
+title: "Homework 3"
+author: "Lusine Zilfimian"
+date: "March 10, 2019"
+output: html_document
+---
+
+For this Homework, you are required to submit both Markdown and HTML files with your answers and code in it. Be sure that the .Rmd file is working, so when I run it, there would be no errors and represent the same information as HTML. Write your code and interpretations under each question. The interpretations of the results need to be written below or above all the charts, summaries, or tables. Do not remove problems from your Markdown file. 
+
+Use awards.csv dataset uploaded on Moodle to analyze the relationship between the target variable and different factors. The description of the variables is given in a separate file. Pay close attention to the names of axes, titles, and labels. <p>
+
+
+
+<b> Problem 1. 1 pt. </b> <p>
+
+* Load the file. 
+
+* Use the function str() to understand the structure of your data.
+
+* Get rid of variables that are irrelevant for Poisson regression analysis using function select(). 
+
+* Pay attention to the last column of your data. Use the separate() function to solve the problem based on data description.
+
+* Check whether the data types are correct, if not, make appropriate corrections, assigning labels to each level according to the data description. 
+
+* Use the glimpse() function to see the structure of the final data.
+
+```{r}
+
+```
+
+
+<b> Problem 2. 1.5 pt. </b> <p>
+
+a. Find your dependent variable for Poisson regression analysis. Plot the histogram of your target variable. Calculate the unconditional mean and variance of your target variable. What can you notice?
+
+b. Find the  **categorical** variables which affect your target variable using boxplots. Comment on it. 
+
+c. Use group_by() and summarise() functions to conclude about conditional variances and the means of your target variable grouped by categorical variables. Comment on it: do you have the problem of overdispersion?
+
+d. Why Poisson regression is called log-linear?
+
+```{r}
+
+```
+
+
+<b> Problem 3. 2 pt. </b> <p>
+
+a. Use the glm() function to perform an intercept-only Poisson regression model with your chosen (see Problem 2) target variable as the response. Use the output of your model to calculate the mean of your target variable.
+
+b. Exclude from full model variables with insignificant coefficients. Show the result. Explain the meanings of coefficients of your model (at least one numeric and one categorical).
+
+c. Pick your own new observation and predict the lambda. Comment on it.
+
+d. Calculate the probability of having more than 15 awards using your predicted lambda from Problem 3 c.
+
+e. Formulate Null and Alternative hypotheses for chi-squared and deviance test. Do it both mathematically and with explanation. Conclude about goodness of fit for the full model (with significant coefficients) using chi-squared and deviance tests. 
+
+
+```{r}
+
+```
+
+<b> Problem 4. 2.5 pt. </b> <p>
+
+a. What is the equidispersion in Poisson regression? Why do we need to avoid overdispersion? 
+
+b. Add to your data a new (created) variable with the problem of unconditional overdispersion. Show the problem by computing the average and variance of your variable. (Your variable needs to have a similar meaning to your target variable.). 
+
+c. Plot the histogram of your created variable grouped by a nominal variable. Does your variable have conditional overdispersion with the nominal variable in your data?
+
+d. Run the model with the new variable as a response. Your model must contain only significant coefficients.
+
+e. Use the function dispersiontest to find out overdispersion. Formulate Null and Alternative hypotheses for trafo=Null (mathematically and explain it). Do you have an overdispersion?
+
+f. Run the negative binomial and quasi-Poisson model. Show only coefficients. Find the best model based on deviance. Which is the best model? 
+
+
+
+<b><i>
+
+
+<b>Please, make brief and meaningful conclusions.<b>
