@@ -1,0 +1,43 @@
+---
+title: "Homework 4"
+author: " "
+date: "March 26, 2019"
+output: html_document
+---
+```
+For this Homework, you are required to submit both Markdown and HTML files with your answers and code in it. Be sure that the .Rmd file is working, so when I run it, there would be no errors and represent the same information as HTML. Write your code and interpretations under each question. The interpretations of the results need to be written below or above all the charts, summaries, or tables. Do not remove problems from your Markdown file. 
+
+Use movies_data.xls dataset uploaded on GitHub to analyze the relationship between the target variable and different factors. The description of the variables is given in a separate file. Pay close attention to the names of axes, titles, and labels. <p>
+```
+
+<b> Problem 1. 1 pt. </b> <p>
+```
+a. Fit a linear model using least squares on the training set, and report the test error obtained. 
+b. What is regularization? Why we need it?
+
+```
+
+<b>Problem 2. 2 pt. </b> <p>
+```
+a. Fit a ridge regression model on the training set, with lambda chosen by cross-validation. Report the test error obtained.
+b. Describe the main idea of ridge regression.
+```
+<b>Problem 3. 2 pt. </b> <p>
+
+```
+a. Fit a lasso model on the training set, with lambda chosen by cross-validation. Report the test error obtained, along with the number of non-zero coefficient estimates.
+b. What is the difference between ridge and lasso regression?
+```
+
+<b>Problem 4. 2 pt. </b> <p>
+
+```
+a. Find the best elastic net regression with alpha chosen by cross-validation.
+b. Is there much difference among the test errors resulting from these four approaches. Which one is the best?
+```
+
+<b> Bonus 1 pt. </b>
+
+```
+Is there any relationship between the variance of ridge estimation and the variance of OLS estimation? Show/prove it.
+```
