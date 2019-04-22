@@ -1,0 +1,59 @@
+---
+title: "KNN"
+author: " "
+date: "April 18, 2019"
+output: html_document
+---
+
+<h2>Due date: 30.04.2019 11:59 </h2>
+  <i>
+  You are required to submit both Markdown and HTML files. Data set (Spam E-mail Data) relevant for this assignment can be found in the R package "DAAG". 
+
+</i>
+  
+---------------------------------------------
+  
+  <b style="color:green">
+  
+  Problem 1 (2 pt.)
+
+ Suppose the sysadmin wants to understand and predict the process of recognizing the emails as spam for new e-mails which make up 20% of your initial data. Compare the performance of k-NN (at least two models) with different k values for classification on your data. Which one is better? Why?
+  (Use cross-validation for choosing the best value of k. Show the result graphically).
+
+
+  </b>
+  
+  
+  
+---------------------------------------------
+  
+  <b style="color:green">
+  
+  Problem 2 (3 pt.)
+
+ * a. Suppose the sysadmin wants to predict the total length of words in capitals (based on their content and type) for new e-mails which make up 20% of your initial data. Compare the result of the linear regression and k-NN regression by solving the task. Which one is better? (Use RMSE, R squared to solve the task.)
+
+ * b.  When will regression outperform the k-NN?
+ 
+</b>
+  
+  
+  
+  
+  
+  
+----------------------------------------------
+  
+  
+<b style="color:darkgreen">
+  
+  Problem 3 (2 pt.)
+
+ * Calculate the Cohen's kappa value without additional functions.
+ * Explain the meaning of using kappa statistics.
+
+
+
+</b>
+
+
