@@ -1,0 +1,57 @@
+---
+title: "Cluster Analysis"
+author: "Good luck! Enjoy your last HW!"
+date: "Due date: 27.05.2019 11:59"
+output: pdf_document
+---
+
+  You are required to submit both Markdown and **PDF** files. 
+
+```{r include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(knitr)
+library(cluster) #for computing fuzzy clustering
+library(factoextra)#for visualizing clusters
+```
+  
+
+**Problem 1 (2.5 pt.)**
+
+**a. What are the differences among exclusive, overlapping and fuzzy clustering? Bring an example of fuzzy clustering with k=2. Use the function funny() from library {cluster} and data visualization techniques from package {factoextra} to show your results. Show the membership matrix. Which of your observations belongs to both clusters.**
+
+**b. Suppose we have an example of a data set with 20 observations. We need to cluster the data using the K-means algorithm. After clustering using k=1, 2, 3, 4 and 5 we obtained only one non-empty cluster. How is it possible?**
+
+
+**c. Suppose we have an example of a data set consisting of three natural circular clusters. These clusters have the same number of points and have the same distribution. The centers of clusters lie on a line, the clusters are located such that the center of the middle cluster is equally distant from the other two. Why will not *bisecting* K-means find the correct cluster?**
+
+
+**Problem 2 (2 pt.)**
+
+ **Perform K-means clustering (manually:) using R), with K = 2, using data from the table with 2 features. **
+
+![](table.png)
+
+* **a. Plot the observations. **
+* **b. Randomly assign a cluster label to each observation. You can use the sample() command in R to do this. Report the cluster labels for each observation.**
+* **c. Compute the centroid for each cluster.**
+* **d. Assign each observation to the centroid to which it is closest, in terms of Euclidean distance. Report the cluster labels for each observation.**
+
+* **e. Repeat (c) and (d) until the answers obtained stop changing. **
+* **f. In your plot from (a), color the observations according to the cluster labels obtained.**
+
+
+
+**Problem 3 (2.5 pt.)**
+
+**Use the data from the World Value Survey (Wave 6) to understand the disposition of our country among others based on some criteria. The description of the variables and the survey are given with a separate file. Here is the link to obtain more information: http://www.worldvaluessurvey.org/wvs.jsp. Choose the subset from Wave 6 data to perform the cluster analysis. *Note* that you need to use meaningful selections both of variables (based on some theme/problem) and countries.** 
+
+* **a. Describe how and why you choose your subset of variables and observations. What is your goal?**
+* **b. Use all (appropriate) tools/functions from our lecture to cluster (both nested and untested algorithms) the countries. Interpret them.**
+**b1. Is your hierarchical clustering stable regards to between clusters distance measures?**
+**b2.Compare the results obtained from two different k-means.**
+* **c. Make the conclusion (also based on cluster centers).**
+
+**Bonus 1 (2 pt.)**
+
+**Show that the average pairwise distance between the points in a cluster is equivalent to the SSE of the cluster.**
